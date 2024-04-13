@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/idxem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idgd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1000 nghìn ">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/kieugd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày 11/11/111">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sotien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày 11/11/111">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại Ăn Uống">
+
+        </TextView>
+        <TextView
+            android:id="@+id/loaigd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại Ăn Uống">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

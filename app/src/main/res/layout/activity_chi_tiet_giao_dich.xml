@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTiet_GiaoDich">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.162"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.40"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/ic_shape"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_vertical|end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="50dp"
+            android:layout_marginHorizontal="80dp"
+            android:layout_gravity="center"
+            android:text="Chi tiết giao dịch"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            />
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:src="@drawable/eating"
+        app:layout_constraintEnd_toEndOf="@id/guideline1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2">
+
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/idxem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="9dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2">
+
+        <TextView
+            android:id="@+id/idgd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_botron"
+            android:text=" 1000 nghìn "
+            android:textColor="@color/tim"
+            android:textSize="25dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/sotien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="so tien"
+            android:textSize="25dp"
+            android:textColor="#00B0FF"
+            android:background="@drawable/bg_botron"
+            android:backgroundTint="#A17383"
+            android:layout_marginTop="15dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ngay"
+            android:textSize="25dp"
+            android:textColor="#E31608"
+            android:background="@drawable/bg_botron"
+            android:backgroundTint="#E3D76E"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/mota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mo ta"
+            android:textSize="25dp"
+            android:textColor="#FF0057"
+            android:background="@drawable/bg_botron"
+            android:backgroundTint="#BFECE7"
+            android:layout_marginTop="15dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kieugd"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Ngày 11/11/111"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="#09680D"
+        android:background="@drawable/bg_botron"
+        android:backgroundTint="#E4BABA"
+        app:layout_constraintBottom_toTopOf="@+id/loaigd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+    </TextView>
+
+    <TextView
+        android:id="@+id/loaigd"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Loại giao dich"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="#B54C45"
+        android:background="@drawable/bg_botron"
+        android:backgroundTint="#BAA8DC"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/kieugd">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

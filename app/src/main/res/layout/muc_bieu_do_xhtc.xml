@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/muc_bieu_do_xhtc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pie_chart_item_lable_xhtc"
+            android:layout_width="123dp"
+            android:layout_height="40dp"
+            android:text="Giáo dục"
+            android:textAlignment="textStart"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            tools:ignore="RtlCompat" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pie_chart_item_percent_xhtc"
+                android:layout_width="98dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:text="10%"
+                android:textSize="18dp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/pie_chart_item_total_amount_xhtc"
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1000000 đ"
+                android:textAlignment="textStart"
+                android:textSize="18dp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
